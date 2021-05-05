@@ -9,7 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:TextBox ID="tb_Msg" runat="server"></asp:TextBox>
         <div>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_Msg" ErrorMessage="格式錯誤" ValidationExpression="^abc\d*cba$"></asp:RegularExpressionValidator>
         </div>
     </form>
 </body>
